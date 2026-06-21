@@ -4,7 +4,7 @@ import { useNavigate, Link } from "react-router-dom";
 import { useAuth } from "../hooks/useAuth";
 import toast from "react-hot-toast";
 import { Mail, Lock, ShieldCheck } from "lucide-react";
-import loginIllustration from "../assets/login-amico.svg";
+import loginIllustration from "../assets/Login-amico.svg";
 
 export default function Login() {
   const navigate = useNavigate();

@@ -3,7 +3,7 @@ import { useNavigate, Link } from "react-router-dom";
 import { registerUser } from "../services/authService";
 import toast from "react-hot-toast";
 import { User, Mail, Lock } from "lucide-react";
-import registerIllustration from "../assets/sign up-amico.svg";
+import registerIllustration from "../assets/signup-amico.svg";
 
 export default function Register() {
   const navigate = useNavigate();
