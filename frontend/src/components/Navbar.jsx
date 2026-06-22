@@ -2,6 +2,7 @@ import { useNavigate } from "react-router-dom";
 import { logoutUser } from "../services/authService";
 import { useAuth } from "../hooks/useAuth";
 import { Bell, Search, Menu } from "lucide-react";
+import toast from "react-hot-toast";
 
 export default function Navbar() {
   const navigate = useNavigate();
@@ -14,7 +15,11 @@ export default function Navbar() {
 
       logout();
 
-      navigate("/login");
+      toast.success("Logged out successfully");
+
+      setTimeout(() => {
+        navigate("/login");
+      }, 1000);
     } catch (error) {
       console.log(error);
     }
